@@ -1,0 +1,38 @@
+{
+    "name": "coleus/framework",
+    "description": "The Coleus Framework.",
+    "keywords": ["framework", "coleus"],
+    "license": "MIT",
+    "homepage": "https://coleus.app",
+    "support": {
+        "issues": "https://github.com/coleusapp/framework/issues",
+        "source": "https://github.com/coleusapp/framework"
+    },
+    "authors": [
+        {
+            "name": "Amirmasoud Sheydaei",
+            "email": "amirmasoud@coleus.app"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "replace": {
+        "coleus/account": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "Illuminate\\": "src/Coleus/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Coleus\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
