@@ -18,11 +18,15 @@
         "php": "^8.1"
     },
     "replace": {
-        "coleus/account": "self.version"
+        "coleus/account": "self.version",
+        "coleus/calculator": "self.version",
+        "coleus/notes": "self.version",
+        "coleus/system": "self.version",
+        "coleus/ui": "self.version"
     },
     "autoload": {
         "psr-4": {
-            "Illuminate\\": "src/Coleus/"
+            "Coleus\\": "src/Coleus/"
         }
     },
     "autoload-dev": {
