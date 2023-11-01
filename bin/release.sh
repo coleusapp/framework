@@ -53,7 +53,7 @@ git tag $VERSION
 git push origin --tags
 
 # Tag Components
-for REMOTE in account ui
+for REMOTE in account ui notes
 do
     echo ""
     echo ""

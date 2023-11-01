@@ -20,6 +20,8 @@ git pull origin $CURRENT_BRANCH
 
 remote account git@github.com:coleusapp/account.git
 remote ui git@github.com:coleusapp/ui.git
+remote notes git@github.com:coleusapp/notes.git
 
 split 'src/Coleus/Account' account
 split 'src/Coleus/Ui' ui
+split 'src/Coleus/Notes' notes
