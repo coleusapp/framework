@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
+set -x
 
 # Make sure the release tag is provided.
 if (( "$#" != 1 ))
