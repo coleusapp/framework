@@ -18,6 +18,6 @@ function remote()
 
 git pull origin $CURRENT_BRANCH
 
-remote account git@github.com:illuminate/account.git
+remote account git@github.com:coleusapp/account.git
 
 split 'src/Coleus/Account' account
