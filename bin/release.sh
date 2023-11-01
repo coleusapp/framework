@@ -59,7 +59,7 @@ do
     echo "Releasing $REMOTE";
 
     TMP_DIR="/tmp/coleus-split"
-    REMOTE_URL="git@github.com:coleus/$REMOTE.git"
+    REMOTE_URL="git@github.com:coleusapp/$REMOTE.git"
 
     rm -rf $TMP_DIR;
     mkdir $TMP_DIR;
