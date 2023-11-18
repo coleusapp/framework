@@ -2,25 +2,35 @@
 
 namespace Coleus\Calculator;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class CalculatorServiceProvider extends PackageServiceProvider
+class CalculatorServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function register()
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('calculator')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasAssets()
-            ->hasRoute('web');
-
-        $this->app->bind('calculator', fn ($app) => new Calculator());
+        $this->app->bind('calculator', function ($app) {
+            return new Calculator();
+        });
     }
+
+    public function boot()
+    {
+        //
+    }
+    // public function configurePackage(Package $package): void
+    // {
+    //     /*
+    //      * This class is a Package Service Provider
+    //      *
+    //      * More info: https://github.com/spatie/laravel-package-tools
+    //      */
+    //     $package
+    //         ->name('calculator')
+    //         ->hasConfigFile()
+    //         ->hasViews()
+    //         ->hasAssets()
+    //         ->hasRoute('web');
+    //
+    //     $this->app->bind('calculator', fn ($app) => new Calculator());
+    // }
 }
