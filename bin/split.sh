@@ -23,9 +23,13 @@ remote ui git@github.com:coleusapp/ui.git
 remote notes git@github.com:coleusapp/notes.git
 remote system git@github.com:coleusapp/system.git
 remote calculator git@github.com:coleusapp/calculator.git
+remote music git@github.com:coleusapp/music.git
+remote bucket git@github.com:coleusapp/bucket.git
 
 split 'src/Coleus/Account' account
 split 'src/Coleus/Ui' ui
 split 'src/Coleus/Notes' notes
 split 'src/Coleus/System' system
 split 'src/Coleus/Calculator' calculator
+split 'src/Coleus/Music' music
+split 'src/Coleus/Bucket' bucket
