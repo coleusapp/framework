@@ -1,10 +1,10 @@
 <?php
 
-namespace Coleus\System\Http\Controller;
+namespace Coleus\Music\Http\Controller;
 
 use Illuminate\Routing\Controller;
 
-class SystemController extends Controller
+class MusicController extends Controller
 {
     public function index()
     {

@@ -27,7 +27,9 @@
         "coleus/calculator": "self.version",
         "coleus/notes": "self.version",
         "coleus/system": "self.version",
-        "coleus/ui": "self.version"
+        "coleus/ui": "self.version",
+        "coleus/bucket": "self.version",
+        "coleus/music": "self.version"
     },
     "autoload": {
         "psr-4": {

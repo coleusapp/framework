@@ -1,10 +1,10 @@
 <?php
 
-namespace Coleus\System;
+namespace Coleus\Music;
 
 use Illuminate\Support\ServiceProvider;
 
-class SystemServiceProvider extends ServiceProvider
+class MusicServiceProvider extends ServiceProvider
 {
     public function register()
     {
@@ -16,7 +16,7 @@ class SystemServiceProvider extends ServiceProvider
         ], 'dist');
 
         $this->app->bind('system', function ($app) {
-            return new System();
+            return new Music();
         });
     }
 
