@@ -1,10 +1,10 @@
 {
     "name": "coleus/bucket",
-    "description": "Music for Coleus",
+    "description": "Bucket for Coleus",
     "keywords": [
         "Coleus",
         "laravel",
-        "music"
+        "bucket"
     ],
     "homepage": "https://github.com/coleus/system",
     "license": "MIT",
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Coleus\\Music\\": "/"
+            "Coleus\\Bucket\\": "/"
         }
     },
     "scripts": {
@@ -66,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Coleus\\Music\\MusicServiceProvider"
+                "Coleus\\Bucket\\BucketServiceProvider"
             ],
             "aliases": {
-                "Music": "Coleus\\Music\\Facades\\Music"
+                "Bucket": "Coleus\\Bucket\\Facades\\Bucket"
             }
         }
     },
